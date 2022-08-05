@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:3000/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:3000/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:3000/favicon-16x16.png">
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <title>Cafe React</title>
+  <script defer="" src="./ppp_files/bundle.js.download"></script><style>@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet);</style><style>@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--black-color);
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root{
+  --yellow-color: #F5DE7A;
+  --dark-color: #1B1B1E;
+  --grey-color: #6D676E;
+  --light-grey-color: #dfdfe6;
+  --white-color: #FBFFFE;
+  --black-color: #161618;
+  --transition: all 300ms ease-in-out;
+}
+
+.text-white{
+  color: var(--white-color)
+}
+
+.text-black{
+  color: var(--black-color)
+}
+
+.text-yellow{
+  color: var(--yellow-color)
+}
+
+.text-grey{
+  color: var(--grey-color)
+}
+
+.text-dark{
+  color: var(--dark-color)
+}
+
+.bg-transparent{
+  background-color: transparent;
+}
+
+.bg-white{
+  background-color: var(--white-color);
+}
+
+.bg-black{
+  background-color: var(--black-color);
+}
+
+.bg-grey{
+  background-color: var(--grey-color);
+}
+
+.bg-light-grey{
+  background-color: var(--light-grey-color);
+}
+
+.bg-yellow{
+  background-color: var(--yellow-color);
+}
+
+.bg-dark{
+  background-color: var(--dark-color);
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0U7SUFDRSw0Q0FBNEM7RUFDOUM7QUFDRjs7QUFFQTtFQUNFO0lBQ0UsdUJBQXVCO0VBQ3pCO0VBQ0E7SUFDRSwwQkFBMEI7RUFDNUI7QUFDRjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QixTQUFTO0VBQ1QsVUFBVTtBQUNaOztBQUVBO0VBQ0Usb0NBQW9DO0VBQ3BDLHVCQUF1QjtFQUN2QixrQ0FBa0M7QUFDcEM7O0FBRUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIscUJBQXFCO0VBQ3JCLHFCQUFxQjtFQUNyQiwyQkFBMkI7RUFDM0Isc0JBQXNCO0VBQ3RCLHNCQUFzQjtFQUN0QixtQ0FBbUM7QUFDckM7O0FBRUE7RUFDRTtBQUNGOztBQUVBO0VBQ0U7QUFDRjs7QUFFQTtFQUNFO0FBQ0Y7O0FBRUE7RUFDRTtBQUNGOztBQUVBO0VBQ0U7QUFDRjs7QUFFQTtFQUNFLDZCQUE2QjtBQUMvQjs7QUFFQTtFQUNFLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLG1DQUFtQztBQUNyQzs7QUFFQTtFQUNFLHlDQUF5QztBQUMzQzs7QUFFQTtFQUNFLHFDQUFxQztBQUN2Qzs7QUFFQTtFQUNFLG1DQUFtQztBQUNyQzs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsZUFBZTtBQUNqQiIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9UG9wcGluczoxMDAsMTAwaXRhbGljLDIwMCwyMDBpdGFsaWMsMzAwLDMwMGl0YWxpYyxyZWd1bGFyLGl0YWxpYyw1MDAsNTAwaXRhbGljLDYwMCw2MDBpdGFsaWMsNzAwLDcwMGl0YWxpYyw4MDAsODAwaXRhbGljLDkwMCw5MDBpdGFsaWNcIiByZWw9XCJzdHlsZXNoZWV0Jyk7XG5cbkBtZWRpYSAocHJlZmVycy1yZWR1Y2VkLW1vdGlvbjogbm8tcHJlZmVyZW5jZSkge1xuICAuQXBwLWxvZ28ge1xuICAgIGFuaW1hdGlvbjogQXBwLWxvZ28tc3BpbiBpbmZpbml0ZSAyMHMgbGluZWFyO1xuICB9XG59XG5cbkBrZXlmcmFtZXMgQXBwLWxvZ28tc3BpbiB7XG4gIGZyb20ge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDBkZWcpO1xuICB9XG4gIHRvIHtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZVgoMzYwZGVnKTtcbiAgfVxufVxuXG4qIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xufVxuXG5ib2R5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tYmxhY2stY29sb3IpO1xuICBzY3JvbGwtYmVoYXZpb3I6IHNtb290aDtcbiAgZm9udC1mYW1pbHk6IFwiUG9wcGluc1wiLCBzYW5zLXNlcmlmO1xufVxuXG51bHtcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xufVxuXG5hIHtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuXG46cm9vdHtcbiAgLS15ZWxsb3ctY29sb3I6ICNGNURFN0E7XG4gIC0tZGFyay1jb2xvcjogIzFCMUIxRTtcbiAgLS1ncmV5LWNvbG9yOiAjNkQ2NzZFO1xuICAtLWxpZ2h0LWdyZXktY29sb3I6ICNkZmRmZTY7XG4gIC0td2hpdGUtY29sb3I6ICNGQkZGRkU7XG4gIC0tYmxhY2stY29sb3I6ICMxNjE2MTg7XG4gIC0tdHJhbnNpdGlvbjogYWxsIDMwMG1zIGVhc2UtaW4tb3V0O1xufVxuXG4udGV4dC13aGl0ZXtcbiAgY29sb3I6IHZhcigtLXdoaXRlLWNvbG9yKVxufVxuXG4udGV4dC1ibGFja3tcbiAgY29sb3I6IHZhcigtLWJsYWNrLWNvbG9yKVxufVxuXG4udGV4dC15ZWxsb3d7XG4gIGNvbG9yOiB2YXIoLS15ZWxsb3ctY29sb3IpXG59XG5cbi50ZXh0LWdyZXl7XG4gIGNvbG9yOiB2YXIoLS1ncmV5LWNvbG9yKVxufVxuXG4udGV4dC1kYXJre1xuICBjb2xvcjogdmFyKC0tZGFyay1jb2xvcilcbn1cblxuLmJnLXRyYW5zcGFyZW50e1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbn1cblxuLmJnLXdoaXRle1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS13aGl0ZS1jb2xvcik7XG59XG5cbi5iZy1ibGFja3tcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tYmxhY2stY29sb3IpO1xufVxuXG4uYmctZ3JleXtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tZ3JleS1jb2xvcik7XG59XG5cbi5iZy1saWdodC1ncmV5e1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodC1ncmV5LWNvbG9yKTtcbn1cblxuLmJnLXllbGxvd3tcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0teWVsbG93LWNvbG9yKTtcbn1cblxuLmJnLWRhcmt7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWRhcmstY29sb3IpO1xufVxuXG4uY29udGFpbmVye1xuICBtYXgtd2lkdGg6IDEyMDBweDtcbiAgbWFyZ2luOiAwIGF1dG87XG4gIHBhZGRpbmc6IDAgMnJlbTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>#navbar-logo {
+    text-decoration: none;
+    color: var(--yellow-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0.6rem 0.7rem;
+    border-radius: 50%;
+    margin: 0.3rem 0;
+    background-color: var(--dark-color);
+    text-align: center;
+    animation: App-logo-spin infinite 8s linear;
+    border: 1px solid var(--yellow-color);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(http://localhost:3000/static/media/cafe-logo.75d98e1820a6787e318a.jpg) center/cover no-repeat;
+}
+
+.navbar {
+    padding-top: 2rem;
+    min-height: 1.8rem;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid var(--grey-color);
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar-link {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1.2rem;
+    color: var(--white-color);
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+#navbar-link:hover {
+    color: var(--yellow-color);
+    transition: all 0.4s ease-in-out;
+    text-decoration: underline;
+    opacity: 0.6;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL25hdmJhci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxxQkFBcUI7SUFDckIsMEJBQTBCO0lBQzFCLGlCQUFpQjtJQUNqQixnQkFBZ0I7SUFDaEIsc0JBQXNCO0lBQ3RCLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsbUNBQW1DO0lBQ25DLGtCQUFrQjtJQUNsQiwyQ0FBMkM7SUFDM0MscUNBQXFDO0lBQ3JDLG1JQUF5SDtBQUM3SDs7QUFFQTtJQUNJLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsV0FBVztJQUNYLGdCQUFnQjtJQUNoQiwwQ0FBMEM7QUFDOUM7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksV0FBVztJQUNYLGFBQWE7SUFDYix1QkFBdUI7QUFDM0I7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLGlCQUFpQjtJQUNqQix5QkFBeUI7SUFDekIsZUFBZTtJQUNmLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSwwQkFBMEI7SUFDMUIsZ0NBQWdDO0lBQ2hDLDBCQUEwQjtJQUMxQixZQUFZO0FBQ2hCIiwic291cmNlc0NvbnRlbnQiOlsiI25hdmJhci1sb2dvIHtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGNvbG9yOiB2YXIoLS15ZWxsb3ctY29sb3IpO1xyXG4gICAgZm9udC1zaXplOiAxLjRyZW07XHJcbiAgICBmb250LXdlaWdodDogNzAwO1xyXG4gICAgcGFkZGluZzogMC42cmVtIDAuN3JlbTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICAgIG1hcmdpbjogMC4zcmVtIDA7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1kYXJrLWNvbG9yKTtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGFuaW1hdGlvbjogQXBwLWxvZ28tc3BpbiBpbmZpbml0ZSA4cyBsaW5lYXI7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS15ZWxsb3ctY29sb3IpO1xyXG4gICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHJnYmEoMCwgMCwgMCwgMC44KSwgcmdiYSgwLCAwLCAwLCAwLjcpKSwgdXJsKFwiLi9pbWFnZXMvY2FmZS1sb2dvLmpwZ1wiKSBjZW50ZXIvY292ZXIgbm8tcmVwZWF0O1xyXG59XHJcblxyXG4ubmF2YmFyIHtcclxuICAgIHBhZGRpbmctdG9wOiAycmVtO1xyXG4gICAgbWluLWhlaWdodDogMS44cmVtO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHZhcigtLWdyZXktY29sb3IpO1xyXG59XHJcblxyXG4ubmF2YmFyIC5jb250YWluZXIge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5uYXZiYXItaXRlbXMge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbn1cclxuXHJcbiNuYXZiYXItbGluayB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XHJcbiAgICBwYWRkaW5nOiAwIDEuMnJlbTtcclxuICAgIGNvbG9yOiB2YXIoLS13aGl0ZS1jb2xvcik7XHJcbiAgICBmb250LXNpemU6IDFyZW07XHJcbiAgICBvcGFjaXR5OiAwLjk7XHJcbn1cclxuXHJcbiNuYXZiYXItbGluazpob3ZlciB7XHJcbiAgICBjb2xvcjogdmFyKC0teWVsbG93LWNvbG9yKTtcclxuICAgIHRyYW5zaXRpb246IGFsbCAwLjRzIGVhc2UtaW4tb3V0O1xyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XHJcbiAgICBvcGFjaXR5OiAwLjY7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.header {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)), url(http://localhost:3000/static/media/coffee.36e50c1d7448c29c8015.jpg) center/cover no-repeat;
+    min-height: 85vh;
+    width: 100%;
+}
+
+.header .container {
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.header-title {
+    padding: 2rem 0;
+    font-size: 3.5rem;
+    width: 50%;
+    text-align: center;
+    font-weight: 800;
+}
+
+.btn {
+    margin: 1rem 15rem;
+}
+
+.btn a {
+    color: var(--black-color);
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 0.8rem 0.8rem;
+    border: 1px solid var(--grey-color);
+    border-radius: 45%;
+    font-weight: 800;
+}
+
+.btn a:hover {
+    zoom: 110%;
+    color: var(--black-color);
+    transition: 0.3s ease-in;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--yellow-color);
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL2hlYWRlci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpSUFBb0g7SUFDcEgsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxlQUFlO0lBQ2YsYUFBYTtJQUNiLHFCQUFxQjtJQUNyQix5QkFBeUI7SUFDekIsc0JBQXNCO0FBQzFCOztBQUVBO0lBQ0ksZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixVQUFVO0lBQ1Ysa0JBQWtCO0lBQ2xCLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLHNCQUFzQjtJQUN0QixtQ0FBbUM7SUFDbkMsa0JBQWtCO0lBQ2xCLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLFVBQVU7SUFDVix5QkFBeUI7SUFDekIsd0JBQXdCO0lBQ3hCLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1oscUNBQXFDO0FBQ3pDIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlciB7XHJcbiAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQocmdiYSgwLCAwLCAwLCAxKSwgcmdiYSgwLCAwLCAwLCAwLjgpKSwgdXJsKFwiLi9pbWFnZXMvY29mZmVlLmpwZ1wiKSBjZW50ZXIvY292ZXIgbm8tcmVwZWF0O1xyXG4gICAgbWluLWhlaWdodDogODV2aDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4uaGVhZGVyIC5jb250YWluZXIge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBwYWRkaW5nOiAzcmVtIDA7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYWxpZ24taXRlbXM6IGZsZXgtZW5kO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBmbGV4LWVuZDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbn1cclxuXHJcbi5oZWFkZXItdGl0bGUge1xyXG4gICAgcGFkZGluZzogMnJlbSAwO1xyXG4gICAgZm9udC1zaXplOiAzLjVyZW07XHJcbiAgICB3aWR0aDogNTAlO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgZm9udC13ZWlnaHQ6IDgwMDtcclxufVxyXG5cclxuLmJ0biB7XHJcbiAgICBtYXJnaW46IDFyZW0gMTVyZW07XHJcbn1cclxuXHJcbi5idG4gYSB7XHJcbiAgICBjb2xvcjogdmFyKC0tYmxhY2stY29sb3IpO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgZm9udC1zaXplOiAxLjhyZW07XHJcbiAgICBwYWRkaW5nOiAwLjhyZW0gMC44cmVtO1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tZ3JleS1jb2xvcik7XHJcbiAgICBib3JkZXItcmFkaXVzOiA0NSU7XHJcbiAgICBmb250LXdlaWdodDogODAwO1xyXG59XHJcblxyXG4uYnRuIGE6aG92ZXIge1xyXG4gICAgem9vbTogMTEwJTtcclxuICAgIGNvbG9yOiB2YXIoLS1ibGFjay1jb2xvcik7XHJcbiAgICB0cmFuc2l0aW9uOiAwLjNzIGVhc2UtaW47XHJcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG4gICAgYm9yZGVyOiBub25lO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0teWVsbG93LWNvbG9yKTtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="my-app"><div class="navbar"><div class="container"><a href="http://localhost:3000/" id="navbar-logo"><span class="text-white">Cafe </span>React</a><ul class="navbar-items"><a href="http://localhost:3000/" id="navbar-link">Home</a><a href="http://localhost:3000/components/about" id="navbar-link">About</a><a href="http://localhost:3000/components/menu" id="navbar-link">Menu</a><a href="http://localhost:3000/components/contact" id="navbar-link">Contact</a></ul></div></div><div class="header"><div class="container"><h1 class="header-title text-white">How do you <span class="text-yellow">react</span> after drinking <span class="text-yellow">coffee?</span></h1><button type="button" class="btn bg-yellow"><a href="http://localhost:3000/menu">Menu</a></button></div></div></div></div>
+  
+
+</body></html>

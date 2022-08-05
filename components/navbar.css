@@ -1,0 +1,75 @@
+#navbar-logo {
+    text-decoration: none;
+    color: var(--yellow-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.6rem 0.7rem;
+    border-radius: 50%;
+    margin: 0.3rem 0;
+    background-color: var(--dark-color);
+    text-align: center;
+    animation: App-logo-spin infinite 8s linear;
+    border: 1px solid var(--yellow-color);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("./images/cafe-logo.jpg") center/cover no-repeat;
+}
+
+.navbar {
+    padding-top: 2rem;
+    min-height: 1.8rem;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid var(--grey-color);
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar-link {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1.2rem;
+    color: var(--white-color);
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+#navbar-link:hover {
+    color: var(--yellow-color);
+    transition: all 0.4s ease-in-out;
+    text-decoration: underline;
+    opacity: 0.6;
+}
+
+@media (max-width: 460px) {
+    #navbar-logo {
+        font-size: 1rem;
+        padding: 0.5rem 0.2rem;
+    }
+
+    #navbar-link {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 360px) {
+    #navbar-logo {
+        font-size: 0.7rem;
+        padding: 0.5rem 0;
+    }
+
+    .navbar-items {
+        padding-right: 1rem;
+    }
+
+    #navbar-container {
+        padding-left: 1rem;
+    }
+}
