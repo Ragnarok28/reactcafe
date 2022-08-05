@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactcafe/static/css/main.0abdd109.css",
-    "main.js": "/reactcafe/static/js/main.b4487423.js",
+    "main.css": "/reactcafe/static/css/main.13a90fc1.css",
+    "main.js": "/reactcafe/static/js/main.8c3fbd04.js",
     "static/media/cafe5.jpg": "/reactcafe/static/media/cafe5.cb46af745dcfab9f3396.jpg",
     "static/media/cafe6.jpg": "/reactcafe/static/media/cafe6.3d6d2eabccdb2490d8d6.jpg",
     "static/media/cafe.jpg": "/reactcafe/static/media/cafe.c4388c3c800f2c03c4b5.jpg",
@@ -13,11 +13,11 @@
     "static/media/coffee.jpg": "/reactcafe/static/media/coffee.36e50c1d7448c29c8015.jpg",
     "static/media/cafe-logo.jpg": "/reactcafe/static/media/cafe-logo.75d98e1820a6787e318a.jpg",
     "index.html": "/reactcafe/index.html",
-    "main.0abdd109.css.map": "/reactcafe/static/css/main.0abdd109.css.map",
-    "main.b4487423.js.map": "/reactcafe/static/js/main.b4487423.js.map"
+    "main.13a90fc1.css.map": "/reactcafe/static/css/main.13a90fc1.css.map",
+    "main.8c3fbd04.js.map": "/reactcafe/static/js/main.8c3fbd04.js.map"
   },
   "entrypoints": [
-    "static/css/main.0abdd109.css",
-    "static/js/main.b4487423.js"
+    "static/css/main.13a90fc1.css",
+    "static/js/main.8c3fbd04.js"
   ]
 }
