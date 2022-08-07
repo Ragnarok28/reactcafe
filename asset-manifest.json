@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/reactcafe/static/css/main.13a90fc1.css",
-    "main.js": "/reactcafe/static/js/main.e3be8c8c.js",
-    "static/media/cafe5.jpg": "/reactcafe/static/media/cafe5.cb46af745dcfab9f3396.jpg",
-    "static/media/cafe6.jpg": "/reactcafe/static/media/cafe6.3d6d2eabccdb2490d8d6.jpg",
-    "static/media/cafe.jpg": "/reactcafe/static/media/cafe.c4388c3c800f2c03c4b5.jpg",
-    "static/media/cafe3.jpg": "/reactcafe/static/media/cafe3.e495217fa0cb5bb231d7.jpg",
-    "static/media/cafe1.jpg": "/reactcafe/static/media/cafe1.461965727109dde05829.jpg",
-    "static/media/cafe4.jpg": "/reactcafe/static/media/cafe4.b98f0f90dfa4e4837b6b.jpg",
-    "static/media/cafe2.jpg": "/reactcafe/static/media/cafe2.563a29dd94bfd8271273.jpg",
-    "static/media/cafemenu.jpg": "/reactcafe/static/media/cafemenu.423707e545172d960894.jpg",
-    "static/media/coffee.jpg": "/reactcafe/static/media/coffee.36e50c1d7448c29c8015.jpg",
-    "static/media/cafe-logo.jpg": "/reactcafe/static/media/cafe-logo.75d98e1820a6787e318a.jpg",
-    "index.html": "/reactcafe/index.html",
-    "main.13a90fc1.css.map": "/reactcafe/static/css/main.13a90fc1.css.map",
-    "main.e3be8c8c.js.map": "/reactcafe/static/js/main.e3be8c8c.js.map"
+    "main.css": "/reactcafe/home/static/css/main.da25e54a.css",
+    "main.js": "/reactcafe/home/static/js/main.8949e4a6.js",
+    "static/media/cafe5.jpg": "/reactcafe/home/static/media/cafe5.cb46af745dcfab9f3396.jpg",
+    "static/media/cafe6.jpg": "/reactcafe/home/static/media/cafe6.3d6d2eabccdb2490d8d6.jpg",
+    "static/media/cafe.jpg": "/reactcafe/home/static/media/cafe.c4388c3c800f2c03c4b5.jpg",
+    "static/media/cafe3.jpg": "/reactcafe/home/static/media/cafe3.e495217fa0cb5bb231d7.jpg",
+    "static/media/cafe1.jpg": "/reactcafe/home/static/media/cafe1.461965727109dde05829.jpg",
+    "static/media/cafe4.jpg": "/reactcafe/home/static/media/cafe4.b98f0f90dfa4e4837b6b.jpg",
+    "static/media/cafe2.jpg": "/reactcafe/home/static/media/cafe2.563a29dd94bfd8271273.jpg",
+    "static/media/cafemenu.jpg": "/reactcafe/home/static/media/cafemenu.423707e545172d960894.jpg",
+    "static/media/coffee.jpg": "/reactcafe/home/static/media/coffee.36e50c1d7448c29c8015.jpg",
+    "static/media/cafe-logo.jpg": "/reactcafe/home/static/media/cafe-logo.75d98e1820a6787e318a.jpg",
+    "index.html": "/reactcafe/home/index.html",
+    "main.da25e54a.css.map": "/reactcafe/home/static/css/main.da25e54a.css.map",
+    "main.8949e4a6.js.map": "/reactcafe/home/static/js/main.8949e4a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.13a90fc1.css",
-    "static/js/main.e3be8c8c.js"
+    "static/css/main.da25e54a.css",
+    "static/js/main.8949e4a6.js"
   ]
 }
