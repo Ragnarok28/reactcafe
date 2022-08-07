@@ -60,7 +60,7 @@ function Gallery() {
                 })}
             </div>
             <a href="about" className='about-link'>Back To Previous Page</a>
-            <a href="/" className='about-link'>Home Page</a>
+            <a href="home" className='about-link'>Home Page</a>
         </div>
         </>
         );

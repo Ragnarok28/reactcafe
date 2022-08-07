@@ -38,6 +38,7 @@
 }
 
 .menu p {
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     color: var(--white-color);
@@ -88,6 +89,9 @@
 
     .menu > .container {
         padding: 2rem 1rem;
+    }
+    .menu p {
+        font-size: 1.2rem;
     }
 }
 

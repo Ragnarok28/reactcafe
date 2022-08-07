@@ -1,15 +1,17 @@
+import React from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import Header from './components/header';
+ 
 
 
-function App() {
+function Home() {
   return (
-    <div className='my-app'>
+    <>
       <Navbar />
       <Header />
-    </div>
+    </>
   );
 }
 
-export default App;
+export default Home;
