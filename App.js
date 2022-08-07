@@ -5,7 +5,7 @@ import Header from './components/header';
  
 
 
-function Home() {
+function App() {
   return (
     <>
       <Navbar />
@@ -14,4 +14,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default App;

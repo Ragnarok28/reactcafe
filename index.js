@@ -4,7 +4,8 @@ import About from './pages/about';
 import Menu from './pages/menu';
 import Contact from './pages/contact';
 import Gallery from './pages/gallery';
-import Home from './App';
+import Home from './pages/home';
+import App from './App';
 import {
   Routes,
   Route,
@@ -16,6 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
   <Routes>
+    <Route path= "/" element = {<App />}></Route>
     <Route path= "home" element = {<Home />}></Route>
     <Route path= "about" element = {<About />}></Route>
     <Route path= "menu" element = {<Menu />}></Route>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactcafe/home/static/css/main.da25e54a.css",
-    "main.js": "/reactcafe/home/static/js/main.8949e4a6.js",
+    "main.css": "/reactcafe/home/static/css/main.9079e28e.css",
+    "main.js": "/reactcafe/home/static/js/main.e4508ec5.js",
     "static/media/cafe5.jpg": "/reactcafe/home/static/media/cafe5.cb46af745dcfab9f3396.jpg",
     "static/media/cafe6.jpg": "/reactcafe/home/static/media/cafe6.3d6d2eabccdb2490d8d6.jpg",
     "static/media/cafe.jpg": "/reactcafe/home/static/media/cafe.c4388c3c800f2c03c4b5.jpg",
@@ -13,11 +13,11 @@
     "static/media/coffee.jpg": "/reactcafe/home/static/media/coffee.36e50c1d7448c29c8015.jpg",
     "static/media/cafe-logo.jpg": "/reactcafe/home/static/media/cafe-logo.75d98e1820a6787e318a.jpg",
     "index.html": "/reactcafe/home/index.html",
-    "main.da25e54a.css.map": "/reactcafe/home/static/css/main.da25e54a.css.map",
-    "main.8949e4a6.js.map": "/reactcafe/home/static/js/main.8949e4a6.js.map"
+    "main.9079e28e.css.map": "/reactcafe/home/static/css/main.9079e28e.css.map",
+    "main.e4508ec5.js.map": "/reactcafe/home/static/js/main.e4508ec5.js.map"
   },
   "entrypoints": [
-    "static/css/main.da25e54a.css",
-    "static/js/main.8949e4a6.js"
+    "static/css/main.9079e28e.css",
+    "static/js/main.e4508ec5.js"
   ]
 }
